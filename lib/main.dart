@@ -10,8 +10,10 @@ class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context){
   return MaterialApp(
-    debugShowCheckedModeBanner: true,
-    home: Scaffold( ),
+    debugShowCheckedModeBanner: false,
+    home: Scaffold( 
+      backgroundColor: Colors.deepPurple[200],
+    ),
 
   );
   }
