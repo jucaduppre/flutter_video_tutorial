@@ -37,24 +37,32 @@ class MyApp extends StatelessWidget{
 
         ),
     
-      body: Center(
-        child: Container(
-          height: 300,
-          width: 300,
-          decoration: BoxDecoration(
-            color: Colors.deepPurple[400],
-            borderRadius: BorderRadius.circular(20),
-            ),
-            padding: const EdgeInsets.all(25),
-            child: Icon(
-              Icons.heart_broken,
-              color: const Color.fromARGB(255, 231, 5, 5),
-              size: 100,
-            ),
+      body: Column(
+        children: [
+        // 1st box
+        Container(
+          height: 200,
+          width: 200,
+          color: const Color.fromARGB(255, 63, 2, 119),
         ),
+
+        // 2nd box
+        Container(
+          height: 200,
+          width: 200,
+          color: const Color.fromARGB(255, 165, 43, 247),
+        ),
+
+
+        // 3rd box
+        Container(
+          height: 200,
+          width: 200,
+          color: const Color.fromARGB(255, 148, 12, 153),
+        ),
+        ],
       )
     ),
-
    );
   }
 }
