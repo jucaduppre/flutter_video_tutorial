@@ -10,17 +10,15 @@ class MyApp extends StatelessWidget{
   
   @override
   Widget build(BuildContext context){
-  List names = ["juquinha", "isabele", "maria", "joao", "pedro"]; 
   return MaterialApp(
     debugShowCheckedModeBanner: false,
     home: Scaffold( 
-      body: ListView.builder(
-        itemCount: names.length,
-        itemBuilder: (context, index) {
-          return ListTile(
-            title: Text(names[index]),
-          );
-        }
+      body: GridView.builder(itemCount:64, gridDelegate: const 
+      SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 8), 
+      itemBuilder: (context,index)  => Container(
+        color:Colors.black,
+        margin: EdgeInsets.all(2),
+      )
       )
     ),
    );
