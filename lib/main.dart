@@ -20,28 +20,17 @@ class MyApp extends StatelessWidget{
           decoration: BoxDecoration(
             color: Colors.deepPurple[400],
             borderRadius: BorderRadius.circular(20),
-            boxShadow: [
-              BoxShadow(
-                color: const Color.fromARGB(255, 33, 2, 87),
-                blurRadius: 10,
-                offset: const Offset(0, 5),
-              ),
-            ],
-          ),
-          child: const Center(
-            child: Text(
-              'juquinha',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 50,
-                fontWeight: FontWeight.bold,
-              ),
             ),
-          ),
+            padding: const EdgeInsets.all(25),
+            child: Icon(
+              Icons.heart_broken,
+              color: const Color.fromARGB(255, 231, 5, 5),
+              size: 100,
+            ),
         ),
       )
     ),
 
-  );
+   );
   }
 }
