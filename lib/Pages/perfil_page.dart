@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class PerfilPage extends StatelessWidget {
+  const PerfilPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text("bem vindo ao Home Page!"),
+        child: Text("bem vindo ao Perfil Page!"),
       ),
     );
   }
