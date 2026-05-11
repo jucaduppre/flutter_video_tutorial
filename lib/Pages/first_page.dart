@@ -10,6 +10,33 @@ class FirstPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+        backgroundColor: const Color.fromARGB(255, 96, 162, 215),
+      child: Column(
+        children: [
+          DrawerHeader(
+            child: Icon(
+              Icons.heart_broken,
+              size: 48,
+              ),
+          ),
+            ListTile(
+              leading: Icon(Icons.home),
+              title: Text("Home"),
+              onTap: () {
+                Navigator.pushNamed(context, '/home');
+              },
+            ), 
+        ListTile(
+        leading: Icon(Icons.settings),
+        title: Text("Settings"),
+        onTap: () {
+          Navigator.pushNamed(context, '/settings');
+        },
+      ),]
+      )
+      ),
+
       appBar: AppBar(title: Text("primeira Pagina")),
       body: Center(
         child: ElevatedButton(
