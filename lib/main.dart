@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_video_tutorial/Pages/first_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,20 +13,7 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context){
   return MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: Scaffold( 
-      body: Center(
-        child: GestureDetector(onTap:(){
-          print("juquinha clicou!");
-        } ,
-          child: Container(
-          height: 200,
-          width: 200,
-          color: Colors.blue,
-          child: Center(child: Text('Clica!'))
-            )
-          ),
-        ),
-    ),
+    home: const FirstPage(),
    );
   }
 }
